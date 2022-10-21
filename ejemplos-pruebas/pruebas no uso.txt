@@ -1,0 +1,41 @@
+
+
+TODO:
+- El menú no se carga en el cajón menú del contenedor. O menu ocupa todo el contenedor 
+de arriba y entonces el menu de boostrap queda alli arriba.
+
+- El menú sería mejor que se ajuste a la derecha.
+
+- Hacer el pie.
+
+- Carruserl para "Las Lombrices"
+
+- Preguntas frecuentes.
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Silkscreen&display=swap" rel="stylesheet">
+CSS rules to specify families
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Silkscreen', cursive;
+
+
+
+.cab-container > img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+  }
+
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: auto;

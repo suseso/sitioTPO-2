@@ -1,0 +1,12 @@
+
+div.primero{
+    height: 500px;
+    width: 100%; /*ancho*/
+    background-image: "01.png";
+}
+
+img{
+    height: 500px;
+    width: 100%; /*ancho*/
+    /*display: block; /*Valor por defecto*/
+}

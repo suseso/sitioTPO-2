@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>ejemplo json</title>
+
+</head>
+<body>
+
+<script>
+    //const jsonData= require('lombrices.json'); 
+    //console.log(jsonData);
+</script>
+
+    <script>
+        let lombrices = []
+
+        fetch("lombrices.json")
+        .then(response => {
+           return response.json();
+        })
+        .then(jsondata => console.log(jsondata));
+        
+
+        for (i=0; i < 4; i++) {
+            document.write(i);
+            document.write(lombrices[i,1]);
+        };
+
+        
+    
+    </script>
+
+    <script>
+
+        const objeto = lombrices;
+    
+        const array = []
+         for (const [key, value] of Object.entries("lombrices.json")) {
+            array.push([`${key}`, `${value}`]);
+        }
+        console.log(array);
+        document.write(array);
+    
+        //document.write(array)
+    
+    </script>
+
+  <script>
+    var datosDeLombrices = { "lombrices" : [ 
+        {
+        "id": 1,
+        "nombre": "Beatriz la lombriz",
+        "tipo": "Eisenia fetida",
+        "caracteristica": "Es la 'Roja Californiana'"
+      },
+      {
+        "id": 2,
+        "nombre": "Eugenia",
+        "tipo": "Eudrilus eugeniae",
+        "caracteristica": "Sale a pasear solo de noche"
+      },
+      {
+        "id": 3,
+        "nombre": "Eulalia",
+        "tipo": "Dendrobaena veneta",
+        "caracteristica": "No le gustan los anzuelos"
+      },
+      {
+        "id": 4,
+        "nombre": "Cornelia",
+        "tipo": "Perionyx excavatus",
+        "caracteristica": "Odia salir de pesca"
+      },
+      {
+        "id": 5,
+        "nombre": "Chipandolfa",
+        "tipo": "Lumbricus rubellus",
+        "caracteristica": "Prefiere la montaña a la playa"
+      }
+      ]
+    };
+
+    //con stringify genero un objeto json y le cargo los datos de las lombrices
+    var objetoJSONconLombrices = JSON.stringify(datosDeLombrices); 
+    
+    //con parse los paso a una variable (array) para poder usarlo.
+    var lombricesJSON = JSON.parse(objetoJSONconLombrices);
+    document.write(lombricesJSON['lombrices'][3]['nombre']);
+  </script>  
+
+
+<!--
+CREAR UN OBJETO JSON
+    string = '{"name":"John", "age":31, "city":"New York", "male":true}';
+    object = JSON.parse(string);
+    console.log(object);
+
+CREA ESTO:
+{ 
+    name: 'John', 
+    age: 31, 
+    city: 'New York', 
+    male: true 
+} 
+
+VALIDAR JSON
+try {
+    object = JSON.parse(json);
+} catch (error) {
+    is_json = false;
+    console.log("Invalid JSON string");
+}
+
+Intentemos darle a nuestro código esta cadena:
+
+json = '{"name":"John","city""New York"}';
+
+DEVUELVE:
+Invalid JSON string
+
+Y AQUI: https://www.delftstack.com/es/howto/javascript/javascript-validate-json/
+UNA VALIDACIÓN MAS EXTENSA Y COMPLETA.
+
+
+""""""""""""""""""""""""""""""""""""
+fetch("lombrices.json")
+        .then(response => {
+           return response.json();
+        })
+        .then(jsondata => console.log(jsondata))
+
+
+
+-->
+
+
+</body>

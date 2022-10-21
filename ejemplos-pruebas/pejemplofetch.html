@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>ejemplo json</title>
+
+
+<script>
+    //var lomNombre = [];
+    function leeJSON() {
+        const lomNombre= [];
+        fetch('lombrices.json')
+        .then(result => result.json())
+        .then((output) => {
+            //console.log('Output: ', output);
+            for(i=0; i < output['lombrices'].length; i++) {
+                lomNombre.push[i, output['lombrices'][i]['nombre']];
+                document.write(output['lombrices'][i]['nombre']); 
+                document.write("<br>");
+            }
+            document.write(output['lombrices'].length);
+            document.write("Nombre: " + lomNombre);
+            
+            // Probando for in para recorrer el objeto ouput
+            //for(var i in output['lombrices']) {
+            //    lomNombre.push([i, output['lombrices'][i]['nombre']])
+            //}
+            //----------------------
+
+            return lomNombre
+            //return output['lombrices'];
+        }).catch(err => console.error(err));
+
+        //document.write("<br>");
+        //document.write("Nombre: " + lomNombre[1]);
+        //document.write(output['lombrices'].length);
+            
+    };
+    //fuera del fetch no muestra nada
+    //document.write(output['lombrices'][2]['nombre']);
+</script>
+
+</head>
+<body>
+    <script>
+        leeJSON();
+        //var lomNombre=[];
+        //var nombre = new Array(leeJSON());
+        //document.write(leeJSON());
+        //document.write("Nombre: " + nombre);
+        document.write("<br>");
+        document.write("Nombre: " + lomNombre);
+    </script>
+</body>
+</html>

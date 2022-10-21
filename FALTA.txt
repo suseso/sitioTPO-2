@@ -1,0 +1,48 @@
+                            falta al 19/10/22
+
+
+TEMAS PENDIENTES
+""""""""""""""""
+
+PAGINA PRINCIPAL
+- ajustar para que se vea bien "Las postulantes"
+responsive, sin el cajón rojo, otra letra, etc.
+opinion (rb): me parece mejor el titulo y subtitulo de la cabecera 
+a la izq, sin subrayado y con mas sombra.
+
+
+PIE
+- margenes y pading para las secciones
+- quitar el verde 
+- ajustar el cajón negro al maximo del contenedor
+- que el wapp quede dentro del cajón negro
+
+
+LAS LOMBRICES
+- da error 404 al intentar levantar el carrusel
+- el carrusel no funciona bien al achicar la pantalla
+- el carrusel no tiene nobres de las lombrices ni nada
+(como por ej. en "las postulantes")
+
+
+NOSOTROS
+- ajustar quien es y que hace de cada uno
+
+
+HACER RESPONSIVE
+- todo el sitio
+
+
+
+rb.
+
+
+
+
+
+Damian Maretto
+
+
+hice una api de lombrices que está en:
+https://mocki.io/v1/b3001ccd-c914-4d37-8f04-deb5555da9c6
+

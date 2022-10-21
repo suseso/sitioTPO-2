@@ -1,0 +1,17 @@
+.pie-container {
+    display: flex;   /* div será un contenedor flex */
+    flex-direction: row;
+    align-items: stretch;
+    background-color: black;
+    height: 450px;
+}
+.pie-container > div {  /* selectores avanzados */
+    color: rgb(209, 209, 209);
+    /*align-self: stretch;
+    align-content: stretch;*/
+    /*flex-basis: 20vwpx; Podemos usar content, px, %, em, vw, etc */
+    margin: 0, 100px;
+    padding: 20px;
+    font-size: 30px;
+    width: 120px;
+}

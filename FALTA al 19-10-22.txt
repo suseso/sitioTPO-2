@@ -1,0 +1,96 @@
+                            falta al 19/10/22
+
+
+TEMAS PENDIENTES
+"""""""""""""""""""""""""
+
+PAGINA PRINCIPAL
+- ajustar para que se vea bien "Las postulantes"
+responsive, sin el cajón rojo, otra letra, etc.
+opinion (rb): me parece mejor el titulo y subtitulo de la cabecera 
+a la izq, sin subrayado y con mas sombra.
+
+
+PIE
+- margenes y pading para las secciones
+- quitar el verde 
+- ajustar el cajón negro al maximo del contenedor
+- que el wapp quede dentro del cajón negro
+
+
+LAS LOMBRICES
+- da error 404 al intentar levantar el carrusel
+- el carrusel no funciona bien al achicar la pantalla
+- el carrusel no tiene nobres de las lombrices ni nada
+(como por ej. en "las postulantes")
+
+
+NOSOTROS
+- ajustar quien es y que hace de cada uno
+
+
+HACER RESPONSIVE
+- todo el sitio
+
+
+-Dice enviar mail, pero lo conectamos por wapp, será válido?
+- íconos de FontAwesome o Flaticon
+-Tener al menos una página totalmente responsive con 3 puntos de corte para 3
+tamaños de dispositivos distintos.
+-Incorporar al menos una animación, transformación o una transición (se deberá
+indicar en qué parte del sitio web fue incorporada la animación)
+-Además de los aspectos técnicos mencionados anteriormente, el proyecto deberá
+contemplar aspectos de diseño 
+-se evaluará y considerará: maquetación del sitio web; alineación, orden
+y márgenes entre los elementos; tipografía seleccionada acorde a la temática del
+proyecto; fotografía de calidad y optimizada para web; paleta de colores
+seleccionada acorde a la temática
+
+
+
+
+
+
+
+
+
+
+
+
+rb.
+
+
+
+
+Se trata de un sitio en el que priorizamos la velocidad de funcionamiento, gracias a la utilización de funciones de javascript.
+En la página principal, solo se ven unas pocas sentencias; todo es manejado modificando el cuerpo de la página principal, que nunca se recarga ni cambia.
+La utilización de una API (creada por nosotros a partir de un archivo json) está alojada en https://mocki.io/fake-json-api y se uttliza en la página principal.
+
+
+Hola, cuando tuvimos la charla sobre la posibilidad de enviar un correo electrónico (mail) dentro del html, con la sentencia mailto: comentamos muy por encima que esa era un mal habito (php u otros tienen soluciones a esto), porque los "robots" que recorren (o recorrian) la web buscando correos para luego hacer spam (correos no deseados), casualmente buscaban esa sentencia mailto para recuperar lo que decía a continuación, o sea el mail de alguien.
+
+Hace unos años, bastantes, eso era una práctica comun y todos utilizabamos eso robost (mail extractor por ej.) para recorrer la web levantando mails para luego enviar masivamente a quien no conocíamos, publicidad de esto o aquello, así eran esas epocas y gente trabajaba de esto... es fácil a la distancia juzgar, es como los sistemas de llamadas telefónicas de publicidad que en algunos lugares ya están prohibidas.
+
+No importa, volvamos al mailto. Entonces allá por 2005 (puede ser antes, esa fecha es de su última compilación) hice un programita para evitar que el famoso mailto fuera detectado por los "impertinentes robots"...
+El programa es muy simple, traduce una dirección de correo a caracteres ASCIIs y luego te da la posibilidad de copiar y pegar lo que genera en tu código html. Y si bien cuando uno pasa el mosue por el a ref que se genera, muestra el mail al cual está direccionado el mailto, y también en la consola de js, pero los robots al recorrer las páginas lo saltan.
+Se llama NoRobot y funciona en entornos windows, y por esos artilugios del destino, magicamente corre en win 10.
+Me hubiese gustado poder mostrarlo en la clase, pero el tiempo que tenemos es muy corto y los temas a desarrollar son muchos, hubiese estado de mas.
+
+Pero ahora, como el TPO pide el envío de un mail desde la página, me pareció oportuno este comentario. Lo verán en nuestro sitio y estará disponible para quien lo quiera utilizar. 
+
+está en
+http://suseso.net/RBS/publico/norobot/
+
+un ejemplo:
+Traducirá el correo roberto@suseso.net a:
+<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#98;&#101;&#114;&#116;&#111;&#64;&#115;&#117;&#115;&#101;&#115;&#111;&#46;&#110;&#101;&#116;">micorreo@miservidor.com</a>
+
+Y aprovecho para agradecerle su comprensión, siento que siempre estoy al borde de:
+"por favor Roberto, dejeme seguir con mi exposición..." pero su paciencia es inconmensurable, seguro, cosas de maestros.
+ Gracias. Saludos cordiales.
+
+
+
+ 
+
+  

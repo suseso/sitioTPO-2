@@ -1,0 +1,170 @@
+
+
+- UN VUE EN EL SITIO
+en index
+en head
+    <!-- CDN de Vue, version de desarrollo -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+
+al final de body
+<script class="viu" id="viu"></script>
+
+
+en adopción js
+       document.getElementById("centro").innerHTML = adop;
+    //
+    var fin = `
+        const miAplicacion = Vue.createApp({
+        data() {
+            return { nombre: ""}
+        },
+        watch: {
+            nombre(valor) {
+                this.nombre = valor
+                },
+            }
+        }).mount("#nombre")
+    `;
+    document.getElementById("viu").innerHTML = fin;
+};
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+- EMITE MENSAJE DE YA ADOPTASTE
+mensaje.js 	-nuevo js-
+
+en el index
+en el head
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+cambio o en adopcion
+        <button type="submit" class="btn btn-primary" onclick="javascript:mensaje();">Enviar solicitud de adpción</button>
+por
+        <button type="button" class="btn btn-primary" onclick="javascript:mensaje();">Enviar solicitud de adpción</button>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+carrusel
+
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+    <script>nombre()</script>
+    <script>
+        //Creamos nuestra aplicacion.
+        const miAplicacion = Vue.createApp({
+            //DATOS de la aplicacion
+            data() {
+                // Definimos que devuelve nuestra aplicación
+                return { kilometros: 0,
+                            metros: 0 }
+            },
+            // Defino watch:
+            watch: {
+                kilometros(valor) {
+                    this.kilometros = valor
+                    this.metros = valor * 1000
+                    },
+                metros(valor) {
+                    this.kilometros = valor / 1000
+                    this.metros = valor
+                    }
+                }
+    }).mount("#nombre")
+    </script>
+
+
+
+
+"""""""""""""""""
+saco de mensaje
+    var cab = `
+   <div class="cab-container">
+   <div style="flex-grow: 1">Salven a las lombrices</div>
+   <div style="flex-grow: 1"></div>
+   <div style="flex-grow: 1">boton de adopción        </div>
+    `;
+    document.getElementById("cabecera").innerHTML = cab;
+
+
+""""""""""""""""""
+saco del css de carrusel
+video {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+
+
+
+
+@charset "UTF-8";
+/* Aquí definimos las Custom properties */
+:root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ffffff;
+  --borde-negro: #00000050;
+  --marcado: rgb(127, 195, 255);
+  /* Tipografía */
+  --tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+    --blanco: #303030;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #FFFFFF50;
+  }
+}
+/* Configuramos si un usuario ha activado el modo alto contraste. (BETA) */
+
+
+body {
+  font-family: var(--tipo-principal);
+  font-size: 100%;
+  line-height: 1.4em;
+  min-height: 100vh;
+  background-color: var(--blanco);
+  color: var(--negro);
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+
+
+<a class="nav-link" href="javascript:adopcion()">Las Lombrices</a>
